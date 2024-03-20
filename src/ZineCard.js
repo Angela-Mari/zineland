@@ -5,16 +5,8 @@ import { useState } from 'react';
 
 function ZineCard({title, subtitle, description, cover, link}) {
   
-  
-  const [random, setRandom] = useState("zine" + Math.floor(Math.random() * 3+1));
-
-  useEffect(() => {
-    setRandom("zine" + Math.floor(Math.random() * 3+1));
-    return () => {};
-  }, [random]);
-  
   return (
-    <Card style={{ height: '25rem', width: '18rem', margin: "1rem"}} className={random}>
+    <Card style={{ height: '25rem', width: '18rem', margin: "1rem"}}>
       <Card.Body>
         <Card.Img variant="top" style={{ height: '10rem', width: '8rem', backgroundColor: 'gray', objectFit: 'cover'}} src={cover} />
       </Card.Body>
