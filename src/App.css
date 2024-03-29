@@ -8,4 +8,100 @@ h1 {
   font-family: "Barriecito", system-ui;
   font-weight: 400;
   font-style: normal;
+  color: white !important;
+}
+h2 {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+  font-family: "Bayon", sans-serif;
+  font-style: normal;
+}
+
+h4{
+  font-family: "Bayon", sans-serif;
+  font-style: normal;
+}
+
+p {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zineScroll {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+
+.profilePic {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.featuredPic {
+  width: 275px;
+  height: 400px;
+  object-fit: cover;
+  border: 3px solid #fff626;
+}
+
+.btn {
+  font-family: "Bayon", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px !important;
+  width: 150px;
+  height: 50px;
+  color:black !important;
+
+}
+
+.btn.btn-primary {
+  background-color: #fff626;
+  border-radius: 25px;
+  border-color: black;
+}
+
+.btn.btn-primary:hover {
+  border: 3px solid #fff626;
+  background-color: black;
+  color: #fff626 !important;
+  border-radius: 25px;
+}
+
+.btn.btn-secondary {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+.btn.btn-secondary:hover {
+  background-color: black;
+  color: white !important;
+  border-radius: 25px;
+}
+
+.navCont {
+  margin-left: 20px;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  margin-right: 20px;
+  padding-top: 10px;
 }
