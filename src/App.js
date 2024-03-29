@@ -28,12 +28,14 @@ function App() {
       description: "Modern day capitalisim through the eyes of a swiftie.",
       link: "https://angelageorge.com/coming-soon",
       cover: taylorCover,
+      key: 1
     },
     {
     title: "My Life as a Teenage Girl Only 23 Years Old",
     description: "This Zine was created during my post grad quarter life crisis.",
     link: "https://angelageorge.com/zine",
     cover: firstCover,
+    key: 2
   },
   {
     title: "I Want To Be a Bitch",
@@ -41,20 +43,23 @@ function App() {
     description: "My wrong order internal monolouge and growing up.",
     link: "https://angelageorge.com/bitch",
     cover: bitchCover,
+    key: 3
   },
   {
     title: "But I Still Love Technology",
     subtitle: "A Poetry Zine",
     description: "Reflections on my relationship with technology through the lens of art, work, and every day life.",
     link: "https://angelageorge.com/coming-soon",
-    cover: poetryCover
+    cover: poetryCover,
+    key: 4
   },
   {
     title: "But I Still Love Technology",
     subtitle: "A Poetry Zine",
     description: "Reflections on my relationship with technology through the lens of art, work, and every day life.",
     link: "https://angelageorge.com/coming-soon",
-    cover: poetryCover
+    cover: poetryCover,
+    key: 5
   },
 ]
 
@@ -64,24 +69,28 @@ const recs = [{
   description: "This Zine was created during my post grad quarter life crisis.",
   link: "https://sarah-evenson.com/bfa-zine",
   cover: rec1,
+  key: 6
 },
 {
   title: "A Collection of Sketches Vol. 1",
   description: "",
   link: "https://evamalley.com/collections/all-products/products/a-collection-of-sketches-zine",
-  cover: rec4
+  cover: rec4,
+  key: 7
 },
 {
   title: "Dump Him",
   description: "",
   link: "www.etsy.com/shop/ragzmagz",
-  cover: rec3
+  cover: rec3,
+  key: 8
 },
 {
   title: "You Are a Moon",
   description: "www.toriholder.com",
   link: "",
-  cover: rec2
+  cover: rec2,
+  key: 9
 }
 ]
    
@@ -91,7 +100,7 @@ const recs = [{
       <div className='navCont'>
         <Navbar.Brand href="#home"><h1>Angela's ZineLand</h1></Navbar.Brand>
         <Button variant="primary">Home</Button>
-        </div>
+      </div>
     </Navbar>
     {/* TODO: hide this div on ipad and smaller */}
     <div style={{height:"50px"}}>
@@ -154,7 +163,7 @@ const recs = [{
       </h2>
         <div className='zineScroll'>
         {
-      zines.map( zine => <ZineCard title={zine.title} subtitle={zine.subtitle} description={zine.description} link={zine.link} cover={zine.cover}></ZineCard> )
+      zines.map( zine => <ZineCard title={zine.title} subtitle={zine.subtitle} description={zine.description} link={zine.link} cover={zine.cover} key={zine.key}></ZineCard> )
         }
         </div>
       <h2>
@@ -165,7 +174,7 @@ const recs = [{
       </p>
       <div className='zineScroll'>
         {
-      recs.map( zine => <ZineCard title={zine.title} subtitle={zine.subtitle} description={zine.description} link={zine.link} cover={zine.cover}></ZineCard> )
+      recs.map( zine => <ZineCard title={zine.title} subtitle={zine.subtitle} description={zine.description} link={zine.link} cover={zine.cover} id={zine.key}></ZineCard> )
         }
       </div>
     </Col>
