@@ -4,8 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import ZineCard from './ZineCard.js'
 import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import firstCover from './covers/first.png';
+import bitchCover from './covers/bitch.png';
+import poetryCover from './covers/poetry.png';
 
 function App() {
 
@@ -13,22 +14,43 @@ function App() {
     title: "My Life as a Teenage Girl Only 23 Years Old",
     description: "This Zine was created during my post grad quarter life crisis.",
     link: "https://angelageorge.com/zine",
-    cover: "",
+    cover: firstCover,
   },
   {
     title: "I Want To Be a Bitch",
     subtitle: "The Story of a Goody-Two-Shoes Who Cares Too Much",
-    description: "My internal monolouge every time I get a wrong order and how I'm growing from it.",
+    description: "My wrong order internal monolouge and growing up.",
     link: "https://angelageorge.com/bitch",
-    cover: "",
+    cover: bitchCover,
   },
   {
     title: "But I Still Love Technology",
     subtitle: "A Poetry Zine",
     description: "Reflections on my relationship with technology through the lens of art, work, and every day life.",
     link: "",
-    cover: ""
-  }]
+    cover: poetryCover
+  },
+]
+
+const recs = [{
+  title: "It Happened to Me!",
+  subtitle: "I Got a BFA at an Accredited Art College and Now I'm a Whiney Little Bitch!",
+  description: "This Zine was created during my post grad quarter life crisis.",
+  link: "https://sarah-evenson.com/bfa-zine",
+  cover: "",
+},
+{
+  title: "A Collection of Sketches Vol. 1",
+  description: "",
+  link: "https://evamalley.com/collections/all-products/products/a-collection-of-sketches-zine",
+  cover: ""
+},
+{
+  title: "Dump Him",
+  description: "",
+  link: "www.etsy.com/shop/ragzmagz"
+}
+]
    
   return (
    <>
@@ -41,17 +63,17 @@ function App() {
       <h1>
         My Zines
       </h1>
-      
-    </Container>
-    <Container>
-      <h1>
-      Zines I Like
-      </h1>
       <Row>
         {
       zines.map( zine => <ZineCard title={zine.title} subtitle={zine.subtitle} description={zine.description} link={zine.link} cover={zine.cover}></ZineCard> )
         }
       </Row>
+    </Container>
+    <Container>
+      <h1>
+      Zines I Like
+      </h1>
+     
     </Container>
    </>
   );
