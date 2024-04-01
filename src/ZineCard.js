@@ -1,6 +1,4 @@
 import './ZineCard.css';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
 import React, {useState} from "react";
 
 function ZineCard({title, subtitle, description, cover, link, id}) {
@@ -32,7 +30,7 @@ function ZineCard({title, subtitle, description, cover, link, id}) {
             </p>
           </div>
           <div>
-            <a href={link} >Read More →</a>
+            <a href={link} className='zinelink'>Read More →</a>
           </div>
         
         </div>

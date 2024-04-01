@@ -15,24 +15,21 @@ import rec3 from './covers/rec3.png';
 import rec4 from './covers/rec4.png';
 import profile from './covers/profile.png';
 import Button from 'react-bootstrap/Button';
-import Nav from 'react-bootstrap/Nav';
-
-
-
 
 function App() {
 
   const zines = [
     {
       title: "In her Billionaire Era",
-      description: "Modern day capitalisim through the eyes of a swiftie.",
+      subtitle: "An exploration of modern day capitalisim through the eyes of a swiftie.",
+      description: "",
       link: "https://angelageorge.com/coming-soon",
       cover: taylorCover,
       key: 1
     },
     {
     title: "My Life as a Teenage Girl Only 23 Years Old",
-    description: "This Zine was created during my post grad quarter life crisis.",
+    description: "A post-grad-quarter-life crisis zine.",
     link: "https://angelageorge.com/zine",
     cover: firstCover,
     key: 2
@@ -48,47 +45,40 @@ function App() {
   {
     title: "But I Still Love Technology",
     subtitle: "A Poetry Zine",
-    description: "Reflections on my relationship with technology through the lens of art, work, and every day life.",
+    description: "Reflections on my relationship with technology.",
     link: "https://angelageorge.com/coming-soon",
     cover: poetryCover,
     key: 4
-  },
-  {
-    title: "But I Still Love Technology",
-    subtitle: "A Poetry Zine",
-    description: "Reflections on my relationship with technology through the lens of art, work, and every day life.",
-    link: "https://angelageorge.com/coming-soon",
-    cover: poetryCover,
-    key: 5
   },
 ]
 
 const recs = [{
   title: "It Happened to Me!",
   subtitle: "I Got a BFA at an Accredited Art College and Now I'm a Whiney Little Bitch!",
-  description: "This Zine was created during my post grad quarter life crisis.",
+  description: "By Sarah Evenson",
   link: "https://sarah-evenson.com/bfa-zine",
   cover: rec1,
   key: 6
 },
 {
   title: "A Collection of Sketches Vol. 1",
-  description: "",
+  description: "Winter sketches and doodles by Eva Malley",
   link: "https://evamalley.com/collections/all-products/products/a-collection-of-sketches-zine",
   cover: rec4,
   key: 7
 },
 {
   title: "Dump Him",
-  description: "",
-  link: "www.etsy.com/shop/ragzmagz",
+  description: "Collage zine by RagzMagz",
+  link: "https://www.etsy.com/shop/ragzmagz",
   cover: rec3,
   key: 8
 },
 {
   title: "You Are a Moon",
-  description: "www.toriholder.com",
-  link: "",
+  subtitle: "",
+  description: "Art and Poetry zine by Troi Holder",
+  link: "https://www.toriholder.com",
   cover: rec2,
   key: 9
 }
@@ -98,40 +88,47 @@ const recs = [{
    <>
     <Navbar style={{backgroundColor:"black"}} sticky="top">
       <div className='navCont'>
-        <Navbar.Brand href="#home"><h1>Angela's ZineLand</h1></Navbar.Brand>
-        <Button variant="primary">Home</Button>
+        <Navbar.Brand><h1>Angela's ZineLand</h1></Navbar.Brand>
+        <Button variant="primary" href='https://angelageorge.com' className="hideMeOnSmall">Home</Button>
       </div>
     </Navbar>
-    {/* TODO: hide this div on ipad and smaller */}
-    <div style={{height:"50px"}}>
+    <div style={{height:"50px"}} className="hideMeOnSmall">
     </div>
     <div style={{overflow:'hidden'}}>
     <Row>
     <Col lg={6}>
-      <Container>
-      <Row style={{backgroundColor:"#fff626", paddingTop:"1rem", paddingBottom:"2rem", marginLeft:"1rem"}}>
+      <Row style={{backgroundColor:"#fff626"}} className='big-padding'>
+      <h2>Hi. I'm Angela and I make zines.</h2>
+        {/* content */}
         <Col>
-          <h2>Hi. I'm Angela and I make zines.</h2>
+          
           <p>
-          This is my landing page for all things Zines. Poke around and get inspired to make your own zines! Check out my code for this page on <a href="https://github.com/Angela-Mari/zineland">GitHub</a>.
+          This is my landing page for all things Zines. Poke around, laugh, cry, or get inspired to make your own zines! Check out my code for this page on <a href="https://github.com/Angela-Mari/zineland">GitHub</a>.
           </p>
+          {/* links */}
           <Col>
-          <Row>
-            <a href="https://angelageorge.com"><img width="30" height="30" style={{margin:"5px"}}src="https://img.icons8.com/ios-filled/50/link--v1.png" alt="instagram-new"/>My Blog</a>
-          </Row>
-          <Row>
-            <a href="https://instagram.com/artfully_ange"><img width="30" height="30" style={{margin:"5px"}} src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" alt="instagram-new"/>@artfully_ange</a>
+            <Row>
+              <div>
+              <img width="30" height="30" style={{margin:"5px"}}src="https://img.icons8.com/ios-filled/50/link--v1.png" alt="instagram-new"/><a href="https://angelageorge.com">My Blog</a>
+              </div>
             </Row>
             <Row>
-            <a href="https://angelageorge.com/voz-memos"><img width="30" height="30" style={{margin:"5px"}} src="https://img.icons8.com/glyph-neue/64/headphones.png" alt="instagram-new"/>Voz-Memos: A Gen-Z Podcast </a>
+              <div>
+              <img width="30" height="30" style={{margin:"5px"}} src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" alt="instagram-new"/><a href="https://instagram.com/artfully_ange">@artfully_ange</a>
+              </div>
+            </Row>
+            <Row>
+            <div>
+            <img width="30" height="30" style={{margin:"5px"}} src="https://img.icons8.com/glyph-neue/64/headphones.png" alt="instagram-new"/><a href="https://angelageorge.com/voz-memos">Voz-Memos: A Gen-Z Podcast </a>
+            </div>
             </Row>
           </Col>
         </Col>
-        <Col>
+        {/* image */}
+        <Col sm={12} md ={6}>
         <img alt="Angela sticking her tounge out black & white" src={profile} className='profilePic'/>
         </Col>
       </Row>
-      </Container>
       <Container style={{marginLeft:"1rem", marginTop: "2rem"}}>
         <h2>
         Featured
@@ -139,8 +136,11 @@ const recs = [{
         <Row>
         <Col style={{paddingLeft:"0px", marginLeft:"10px"}}>
         <img alt="But I still love technology with keyboards floating in background black and white" src={poetryCover} className='featuredPic'></img>
+        <div style={{height:"50px"}}>
+          </div>
         </Col>
-        <Col style={{paddingLeft:"0px", marginLeft:"-100px"}}>
+        <Col sm= {12} md={6}>
+          <Container>
           <h3>
             But I still Love Technology
           </h3>
@@ -148,16 +148,19 @@ const recs = [{
             A Poetry Zine
           </h4>
           <p>
-          I created this zine after finding a common theme of a love and hate of technology in several of my poems. This was a great exercise in trying to stick to a motif. I enjoyed refreshing myself on my poetry skills as well as soliciting feedback on Reddit. Zines are about creating community and this zine helped me explore a new community (/OCPoetry). 
+          In this zine, I explore my love-hate relationship with tech through poetry and art. Whether you're a digital native or a technophobe to your core, this zine offers a mirror to our modern existence that's as amusing as it is unsettling.
           </p>
           <Button variant="secondary">Read Me</Button>
+          <div style={{height:"50px"}}>
+          </div>
+          </Container>
         </Col>
         </Row>
         
       </Container>
     </Col>
     <Col lg={6}>
-  
+  <Container >
       <h2>
         My Zines
       </h2>
@@ -170,13 +173,14 @@ const recs = [{
       Curated Zines
       </h2>
       <p>
-      These are some zines I’ve found from other artists. I wanted you to know about them! Hope you enjoy these curated picks. 💛
+      These are some zines I found from other artists. Hope you enjoy these curated picks. 💛
       </p>
       <div className='zineScroll'>
         {
       recs.map( zine => <ZineCard title={zine.title} subtitle={zine.subtitle} description={zine.description} link={zine.link} cover={zine.cover} id={zine.key}></ZineCard> )
         }
       </div>
+      </Container>
     </Col>
     </Row>
     </div>

@@ -4,3 +4,7 @@
     width: '200px';
     margin: 1rem;
 }
+
+.zinelink:hover {
+    background-color: #fff626;
+  }
