@@ -126,7 +126,9 @@ const recs = [{
         </Col>
         {/* image */}
         <Col sm={12} md ={6}>
+          <div>
         <img alt="Angela sticking her tounge out black & white" src={profile} className='profilePic'/>
+        </div>
         </Col>
       </Row>
       <Container style={{marginLeft:"1rem", marginTop: "2rem"}}>
