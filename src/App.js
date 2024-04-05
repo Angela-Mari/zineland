@@ -9,6 +9,7 @@ import firstCover from './covers/first.png';
 import bitchCover from './covers/bitch.png';
 import poetryCover from './covers/poetry.png';
 import taylorCover from './covers/taylor.png';
+import artistCover from './covers/artist.jpg';
 import rec1 from './covers/rec1.png';
 import rec2 from './covers/rec2.png';
 import rec3 from './covers/rec3.png';
@@ -20,17 +21,17 @@ function App() {
 
   const zines = [
     {
-      title: "In her Billionaire Era",
-      subtitle: "An exploration of modern day capitalisim through the eyes of a swiftie.",
-      description: "",
-      link: "https://angelageorge.com/coming-soon",
-      cover: taylorCover,
-      key: 1
+      title: "Woman Artist",
+      subtitle: "What is your state of mind?",
+      description: "A collection of sketches.",
+      link: "https://angelageorge.com/woman-artist-zine/",
+      cover: artistCover,
+      key: 10
     },
     {
     title: "My Life as a Teenage Girl Only 23 Years Old",
     description: "A post-grad-quarter-life crisis zine.",
-    link: "https://angelageorge.com/zine",
+    link: "https://angelageorge.com/published-zine/",
     cover: firstCover,
     key: 2
   },
@@ -38,7 +39,7 @@ function App() {
     title: "I Want To Be a Bitch",
     subtitle: "The Story of a Goody-Two-Shoes Who Cares Too Much",
     description: "My wrong order internal monolouge and growing up.",
-    link: "https://angelageorge.com/bitch",
+    link: "https://angelageorge.com/bitch-zine",
     cover: bitchCover,
     key: 3
   },
@@ -46,9 +47,17 @@ function App() {
     title: "But I Still Love Technology",
     subtitle: "A Poetry Zine",
     description: "Reflections on my relationship with technology.",
-    link: "https://angelageorge.com/coming-soon",
+    link: "https://angelageorge.com/but-i-still-love-technology-poetry-zine/",
     cover: poetryCover,
     key: 4
+  },
+  {
+    title: "In her Billionaire Era",
+    subtitle: "An exploration of modern day capitalisim through the eyes of a swiftie.",
+    description: "",
+    link: "https://angelageorge.com/coming-soon",
+    cover: taylorCover,
+    key: 1
   },
 ]
 
@@ -152,7 +161,7 @@ const recs = [{
           <p>
           In this zine, I explore my love-hate relationship with tech through poetry and art. Whether you're a digital native or a technophobe to your core, this zine offers a mirror to our modern existence that's as amusing as it is unsettling.
           </p>
-          <Button variant="secondary">Read Me</Button>
+          <Button variant="secondary" href="https://angelageorge.com/but-i-still-love-technology-poetry-zine/">Read Me</Button>
           <div style={{height:"50px"}}>
           </div>
           </Container>
