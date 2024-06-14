@@ -52,10 +52,10 @@ function App() {
     key: 4
   },
   {
-    title: "In her Billionaire Era",
-    subtitle: "An exploration of modern day capitalisim through the eyes of a swiftie.",
-    description: "",
-    link: "https://angelageorge.com/coming-soon",
+    title: "Eat the Rich Eatery",
+    subtitle: "Brunch | Bar | Bakery",
+    description: "A breakfast menu for Swifties who also would eat the rich.",
+    link: "https://angelageorge.com/eat-the-rich-eatery-zine/",
     cover: taylorCover,
     key: 1
   },
