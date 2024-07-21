@@ -10,6 +10,8 @@ import bitchCover from './covers/bitch.png';
 import poetryCover from './covers/poetry.png';
 import taylorCover from './covers/taylor.png';
 import artistCover from './covers/artist.jpg';
+import monarch from './covers/monarch.jpg';
+import nord from './covers/nord.jpg';
 import rec1 from './covers/rec1.png';
 import rec2 from './covers/rec2.png';
 import rec3 from './covers/rec3.png';
@@ -58,6 +60,20 @@ function App() {
     link: "https://angelageorge.com/eat-the-rich-eatery-zine/",
     cover: taylorCover,
     key: 1
+  },
+  {
+    title: "Save the Butterflies",
+    description: "A bookmark mini zine <3",
+    link: "https://angelageorge.com/monarch",
+    cover: monarch,
+    key: 5
+  },  {
+    title: "Bored in Nord",
+    subtitle: "An Adventure Board Game and Zine",
+    description: "Explore Northeast Minneapolis in Candyland style.",
+    link: "https://angelageorge.com/nordeast/",
+    cover: nord,
+    key: 6
   },
 ]
 
