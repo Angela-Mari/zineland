@@ -1,5 +1,5 @@
 # Welcome to Zineland
-I am so happy to share the final code for Zineland. This react site, deployed as a subsection of my Wordpress site is a vibrant one-page subsite with scrolling cards and a neubrutalism-inspired design. 💛
+I am so happy to share the final code for Zineland. This react site, deployed as a subsection of my Wordpress site, is a vibrant one-page subsite with scrolling cards and a neubrutalism-inspired design. 💛
 
 This project is deployed at https://angelageorge.com/zineland
 
@@ -8,4 +8,4 @@ Most of the work here was mocking-up the site in Figma to address responsive des
 
 ## React 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can figure it out from there. 
+This project was bootstrapped with [Vite](https://vitejs.dev/guide/). You can figure it out from there. 
