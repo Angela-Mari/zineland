@@ -1,7 +1,7 @@
 import './App.css';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import ZineCard from './ZineCard.js'
+import ZineCard from './ZineCard'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -210,6 +210,9 @@ const recs = [{
       </Container>
     </Col>
     </Row>
+      <footer style={{backgroundColor:"black"}}>
+            <Col className="text-center" style={{padding:"15px", color:"white"}}>Ⓒ Ángela George 2024</Col>
+      </footer>
     </div>
    </>
   );
