@@ -10,8 +10,10 @@ import bitchCover from './covers/bitch.png';
 import poetryCover from './covers/poetry.png';
 import taylorCover from './covers/taylor.png';
 import artistCover from './covers/artist.jpg';
+import brushwithdeath from './covers/brush.png';
 import monarch from './covers/monarch.jpg';
 import nord from './covers/nord.jpg';
+import ufo from './covers/ufo.png';
 import rec1 from './covers/rec1.png';
 import rec2 from './covers/rec2.png';
 import rec3 from './covers/rec3.png';
@@ -75,6 +77,21 @@ function App() {
     cover: nord,
     key: 6
   },
+  {
+    title: "Unidentified Fluffy Object",
+    description: "Mulder and Scully have a new meow-stery  to solve.",
+    link: "https://angelageorge.com/lilies#UFO-zine/",
+    cover: ufo,
+    key: 7
+  },
+  {
+    title: "A Brush with Death",
+    subtitle: "A Cat Owner's Toxin Guide",
+    description: "a quick guide to household toxins",
+    link: "https://angelageorge.com/lilies#brushwithdeath/",
+    cover: brushwithdeath,
+    key: 8
+  }
 ]
 
 const recs = [{
