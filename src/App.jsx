@@ -35,12 +35,12 @@ function App() {
       cover: artistCover,
       key: 10
     },
-    {
-    title: "My Life as a Teenage Girl Only 23 Years Old",
-    description: "A post-grad-quarter-life crisis zine.",
-    link: "https://angelageorge.com/published-zine/",
-    cover: firstCover,
-    key: 2
+     {
+    title: "Patio Garden Tour",
+    description: "An illustrated guide to my patio garden",
+    link: "https://angelageorge.com/patio-garden-tour-zine/",
+    cover: garden,
+    key: 12
   },
   {
     title: "I Want To Be a Bitch",
@@ -50,6 +50,16 @@ function App() {
     cover: bitchCover,
     key: 3
   },
+   
+
+    {
+    title: "My Life as a Teenage Girl Only 23 Years Old",
+    description: "A post-grad-quarter-life crisis zine.",
+    link: "https://angelageorge.com/published-zine/",
+    cover: firstCover,
+    key: 2
+  },
+
   {
     title: "But I Still Love Technology",
     subtitle: "A Poetry Zine",
@@ -72,7 +82,9 @@ function App() {
     link: "https://angelageorge.com/monarch",
     cover: monarch,
     key: 5
-  },  {
+  },  
+  
+  {
     title: "Bored in Nord",
     subtitle: "An Adventure Board Game and Zine",
     description: "Explore Northeast Minneapolis in Candyland style.",
@@ -102,19 +114,13 @@ function App() {
     cover: punchcard,
     key: 11
   },
-    {
-    title: "Patio Garden Tour",
-    description: "An illustrated guide to my patio garden",
-    link: "https://angelageorge.com/patio-garden-tour-zine/",
-    cover: garden,
-    key: 12
-  },
+    
     {
     title: "Language of Flowers",
     subtitle: "Victorian Floriography Zine",
     description: "A-Z meanings of flowers for sending covert messages.",
     link: "https://angelageorge.com/language-of-flowers-victorian-floriography-zine//",
-    cover: brushwithdeath,
+    cover: floriography,
     key: 13
   }
 ]
