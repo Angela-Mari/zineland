@@ -12,6 +12,9 @@ import taylorCover from './covers/taylor.png';
 import artistCover from './covers/artist.jpg';
 import brushwithdeath from './covers/brush.png';
 import monarch from './covers/monarch.jpg';
+import garden from './covers/garden.png';
+import punchcard from './covers/punchcard.png';
+import floriography from './covers/floriography.png';
 import nord from './covers/nord.jpg';
 import ufo from './covers/ufo.png';
 import rec1 from './covers/rec1.png';
@@ -87,10 +90,32 @@ function App() {
   {
     title: "A Brush with Death",
     subtitle: "A Cat Owner's Toxin Guide",
-    description: "a quick guide to household toxins",
+    description: "A quick guide to household toxins.",
     link: "https://angelageorge.com/lilies#brushwithdeath/",
     cover: brushwithdeath,
     key: 8
+  },
+    {
+    title: "Punch Card Challenge",
+    description: "A motivational zine to read, make art, exercise, and save money.",
+    link: "https://angelageorge.com/punch-card-challenge-zine/",
+    cover: punchcard,
+    key: 11
+  },
+    {
+    title: "Patio Garden Tour",
+    description: "An illustrated guide to my patio garden",
+    link: "https://angelageorge.com/patio-garden-tour-zine/",
+    cover: garden,
+    key: 12
+  },
+    {
+    title: "Language of Flowers",
+    subtitle: "Victorian Floriography Zine",
+    description: "A-Z meanings of flowers for sending covert messages.",
+    link: "https://angelageorge.com/language-of-flowers-victorian-floriography-zine//",
+    cover: brushwithdeath,
+    key: 13
   }
 ]
 
@@ -228,7 +253,7 @@ const recs = [{
     </Col>
     </Row>
       <footer style={{backgroundColor:"black"}}>
-            <Col className="text-center" style={{padding:"15px", color:"white"}}>Ⓒ Ángela George 2024</Col>
+            <Col className="text-center" style={{padding:"15px", color:"white"}}>Ⓒ Ángela George 2025</Col>
       </footer>
     </div>
    </>
