@@ -21,6 +21,7 @@ import rec1 from './covers/rec1.png';
 import rec2 from './covers/rec2.png';
 import rec3 from './covers/rec3.png';
 import rec4 from './covers/rec4.png';
+import rec5 from './covers/karen.png';
 import profile from './covers/profile.png';
 import Button from 'react-bootstrap/Button';
 
@@ -125,7 +126,16 @@ function App() {
   }
 ]
 
-const recs = [{
+const recs = [
+  {title: "Karen's Guide to Disrupting U.S. ICE Operations!",
+  subtitle: "Use your privlage for good",
+  description: "By Olde Lady",
+  link: "https://karensguide.org/hello-world/",
+  cover: rec5,
+  key: 1
+  },
+  
+  {
   title: "It Happened to Me!",
   subtitle: "I Got a BFA at an Accredited Art College and Now I'm a Whiney Little Bitch!",
   description: "By Sarah Evenson",
